@@ -3,6 +3,10 @@
 ## Overview
 The Resume Applicant Tracking System using Gemini Pro LLM is designed to help students tailor their resumes according to specific job descriptions. By implementing advanced natural language processing capabilities, this system provides detailed feedback on how well a student's resume matches the requirements of a job, identifies any missing keywords or skills, and offers personalized recommendations for improvement.
 
+## Demo Video
+[streamlit-app-2024-08-31-23-08-67.webm](https://github.com/user-attachments/assets/e3ec9a3d-93c1-478a-9509-c58c734b4cc1)
+
+
 ## Features
 **Percentage Matching:** Automatically calculate the percentage match between a student's resume and the job description. This feature helps students understand how closely their resume aligns with the job requirements and identify areas for improvement.
 
