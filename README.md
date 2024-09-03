@@ -6,13 +6,18 @@ The Resume Applicant Tracking System using Gemini Pro LLM is designed to help st
 ## Demo Video
 [streamlit-app-2024-08-31-23-08-67.webm](https://github.com/user-attachments/assets/e3ec9a3d-93c1-478a-9509-c58c734b4cc1)
 
+## Tech Stack
+- **Python**: The core programming language used for developing the backend logic and integrating with AI models.
+- **Streamlit**: Framework for creating the interactive web interface where users can upload resumes, input job descriptions, and view the results.
+- **Gemini Pro LLM**: The language model employed for analyzing resumes and job descriptions, providing insights such as percentage matching, missing keywords, and resume improvement recommendations.
+- **Langchain**: A framework that facilitates the interaction with Gemini Pro LLM, optimizing language model performance and integrating additional tools as needed.
 
 ## Features
-**Percentage Matching:** Automatically calculate the percentage match between a student's resume and the job description. This feature helps students understand how closely their resume aligns with the job requirements and identify areas for improvement.
+- **Percentage Matching:** Automatically calculate the percentage match between a student's resume and the job description. This feature helps students understand how closely their resume aligns with the job requirements and identify areas for improvement.
 
-**Missing Keywords or Skills:** Analyze the resume to identify any missing keywords or skills that are critical for the desired job. This feature highlights gaps in the resume, guiding students on what to add or emphasize to better meet the job criteria.
+- **Missing Keywords or Skills:** Analyze the resume to identify any missing keywords or skills that are critical for the desired job. This feature highlights gaps in the resume, guiding students on what to add or emphasize to better meet the job criteria.
 
-**Resume Improvement Recommendations:** Provide personalized suggestions to enhance the resume based on the job description. These recommendations help students optimize their resumes by adding relevant skills, experiences, and keywords that increase their chances of getting noticed by recruiters.
+- **Resume Improvement Recommendations:** Provide personalized suggestions to enhance the resume based on the job description. These recommendations help students optimize their resumes by adding relevant skills, experiences, and keywords that increase their chances of getting noticed by recruiters.
 
 ## Requirements
 - Python 3.10
