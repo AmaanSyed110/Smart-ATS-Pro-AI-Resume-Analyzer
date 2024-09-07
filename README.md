@@ -8,8 +8,11 @@ The Resume Applicant Tracking System using Gemini Pro LLM is designed to help st
 
 ## Tech Stack
 - **Python**: The core programming language used for developing the backend logic and integrating with AI models.
+  
 - **Streamlit**: Framework for creating the interactive web interface where users can upload resumes, input job descriptions, and view the results.
+  
 - **Gemini Pro LLM**: The language model employed for analyzing resumes and job descriptions, providing insights such as percentage matching, missing keywords, and resume improvement recommendations.
+  
 - **Langchain**: A framework that facilitates the interaction with Gemini Pro LLM, optimizing language model performance and integrating additional tools as needed.
 
 ## Features
@@ -21,7 +24,9 @@ The Resume Applicant Tracking System using Gemini Pro LLM is designed to help st
 
 ## Requirements
 - Python 3.10
+  
 - Gemini Pro model api key (Note: Ensure you have the necessary credentials and permissions to access the Gemini Pro API)
+  
 - Obtain API credentials from the makersuit platform.
 
 - Create a file named .env in the project root directory.
