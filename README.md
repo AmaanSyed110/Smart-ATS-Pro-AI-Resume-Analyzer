@@ -1,4 +1,4 @@
-# Applicant-Tracking-System-using-Gemini-Pro-LLM
+# Smart ATS Pro - AI Resume Analyzer
 
 ## Overview
 The Resume Applicant Tracking System using Gemini Pro LLM is designed to help students tailor their resumes according to specific job descriptions. By implementing advanced natural language processing capabilities, this system provides detailed feedback on how well a student's resume matches the requirements of a job, identifies any missing keywords or skills, and offers personalized recommendations for improvement.
