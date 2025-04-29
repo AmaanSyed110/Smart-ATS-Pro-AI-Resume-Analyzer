@@ -1,36 +1,93 @@
 # Smart ATS Pro - AI Resume Analyzer
 
-## Overview
-The Resume Applicant Tracking System using Gemini Pro LLM is designed to help students tailor their resumes according to specific job descriptions. By implementing advanced natural language processing capabilities, this system provides detailed feedback on how well a student's resume matches the requirements of a job, identifies any missing keywords or skills, and offers personalized recommendations for improvement.
+## Overview 
+
+Smart ATS Pro is an AI-powered resume optimization tool that helps job seekers:
+- Analyze resume compatibility with Applicant Tracking Systems (ATS)
+- Match resumes against specific job descriptions
+- Generate actionable improvement suggestions
+- Create ATS-optimized resume versions
+
+Built with Google's Gemini AI, it provides recruiter-level analysis in seconds.
 
 
+## Tech Stack 
 
-## Tech Stack
-- **Python**: The core programming language used for developing the backend logic and integrating with AI models.
-  
-- **Streamlit**: Framework for creating the interactive web interface where users can upload resumes, input job descriptions, and view the results.
-  
-- **Gemini Pro LLM**: The language model employed for analyzing resumes and job descriptions, providing insights such as percentage matching, missing keywords, and resume improvement recommendations.
-  
-- **Langchain**: A framework that facilitates the interaction with Gemini Pro LLM, optimizing language model performance and integrating additional tools as needed.
+**Frontend:**
+- Streamlit (Python web framework)
+- Plotly (Data visualization)
+- Streamlit-Tags (Tag input component)
+
+**Backend:**
+- Google Gemini 1.5 Pro (AI analysis)
+- PyPDF2 (PDF text extraction)
+- FPDF (PDF generation)
+
+**Supporting:**
+- python-dotenv (Environment management)
+- base64 (File encoding)
 
 ## Features
-- **Percentage Matching:** Automatically calculate the percentage match between a student's resume and the job description. This feature helps students understand how closely their resume aligns with the job requirements and identify areas for improvement.
 
-- **Missing Keywords or Skills:** Analyze the resume to identify any missing keywords or skills that are critical for the desired job. This feature highlights gaps in the resume, guiding students on what to add or emphasize to better meet the job criteria.
+| Feature | Description |
+|---------|-------------|
+| **ATS Score** | 0-100% compatibility score with visual dashboard |
+| **Keyword Gap Analysis** | Identifies missing hard skills from job descriptions |
+| **AI-Powered Rewrites** | Generates improved resume versions with one click |
+| **Skill Matching** | Visual comparison of resume skills vs job requirements |
+| **Historical Tracking** | Saves previous analyses for comparison |
+| **Multi-Format Export** | Download improved resumes as PDF or text |
 
-- **Resume Improvement Recommendations:** Provide personalized suggestions to enhance the resume based on the job description. These recommendations help students optimize their resumes by adding relevant skills, experiences, and keywords that increase their chances of getting noticed by recruiters.
+## How it works
+1. **Input Phase**:
+   - Upload resume PDF
+   - Paste job description
+   - Add priority skills (optional)
 
-## Requirements
-- Python 3.10
+2. **Analysis Phase**
+   - PDF text extraction
+   - Gemini AI processes JD vs resume
+   - Generates match score and feedback
+  
+3. **Output Phase**
+   - Visual dashboard with score
+   - Detailed improvement suggestions
+   - Option to generate improved resume
+
+## How to run the project locally in your system
+### Prerequisites
+- Python 3.9+
   
 - Gemini Pro model api key (Note: Ensure you have the necessary credentials and permissions to access the Gemini Pro API)
   
-- Obtain API credentials from the makersuit platform.
+### Step-by-Step Setup
+- ### Clone repository
+  Open a terminal and run the following command to clone the repository:
 
-- Create a file named .env in the project root directory.
+```
+git clone https://github.com/AmaanSyed110/Youtube-Video-Summarizer.git
+```
+- ### Set Up a Virtual Environment
+It is recommended to use a virtual environment for managing dependencies:
 
-- Add the following lines to .env:
-  ```bash
-   GOOGLE_API_KEY= "your_api_key"
-   ```
+```
+python -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate     # On Windows
+```
+- ### Install Dependencies
+Install the required packages listed in the ```requirements.txt``` file
+```
+pip install -r requirements.txt
+```
+
+- ### Add Your Gemini API Key
+Create a ```.env``` file in the project directory and add your Gemini API key:
+```
+GOOGLE_API_KEY=your_api_key_here
+```
+- ### Run the Application
+Launch the Streamlit app by running the following command:
+```
+streamlit run app.py
+```
